@@ -1,6 +1,5 @@
 {% set version = '0.2.6' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-statcanr
@@ -13,8 +12,7 @@ source:
   sha256: 4a2ddfc351544b8103cacd3920865e49aebf9ba8e8eb142335e8ba4be51fcec2
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
